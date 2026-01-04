@@ -60,7 +60,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact cards */}
-          <div className="grid md:grid-cols-3 gap-4 mb-12">
+          <div className="flex flex-col items-center gap-4 mb-12">
             {contacts.map((contact, index) => (
               <motion.a
                 key={index}
@@ -70,7 +70,7 @@ const ContactSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
+                className="group w-full max-w-sm p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
               >
                 <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
