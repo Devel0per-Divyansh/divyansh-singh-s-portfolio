@@ -30,10 +30,12 @@ const ProjectCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative p-6 md:p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-500 hover-lift"
+      className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-primary/50 via-primary/20 to-accent/50 hover:from-primary/70 hover:via-primary/30 hover:to-accent/70 transition-all duration-500 hover-lift"
     >
-      {/* Hover glow effect */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      {/* Inner card */}
+      <div className="relative p-6 md:p-8 rounded-2xl bg-card">
+        {/* Glow effect */}
+        <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-br from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500 -z-10" />
 
       <div className="relative z-10">
         {/* Header */}
@@ -106,6 +108,7 @@ const ProjectCard = ({
             </Button>
           </div>
         )}
+        </div>
       </div>
     </motion.div>
   );
