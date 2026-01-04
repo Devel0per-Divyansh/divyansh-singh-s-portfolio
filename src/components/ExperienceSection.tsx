@@ -15,10 +15,8 @@ const ExperienceSection = () => {
       period: "Oct 2024 – Aug 2025",
       location: "Jalandhar, India (Hybrid)",
       points: [
-        "Contributed to JEE & NEET question banks by creating exam-relevant problems",
-        "Assisted in academic content organization aligned with competitive exam patterns",
-        "Supported mentors and planning teams in content preparation",
-        "Strengthened analytical thinking, attention to detail, and team collaboration",
+        "Created JEE/NEET exam-relevant questions and structured academic content",
+        "Supported content planning, review workflows, and quality coordination",
       ],
     },
     {
@@ -28,10 +26,8 @@ const ExperienceSection = () => {
       period: "2024",
       location: "NIT Jalandhar",
       points: [
-        "Recognized for leadership, communication, and peer engagement",
-        "Communicating effectively with diverse student groups",
-        "Taking ownership and leading peers responsibly",
-        "Understanding how real impact is built through consistency, not titles",
+        "Led peer engagement initiatives and increased student participation",
+        "Recognized for strong communication, leadership, and consistent execution",
       ],
     },
   ];
@@ -46,8 +42,7 @@ const ExperienceSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <div className="flex items-center gap-4 mb-4">
-            <span className="text-2xl">🏆</span>
+          <div className="mb-4">
             <h2 className="text-3xl md:text-4xl font-bold">
               Achievements & <span className="font-serif italic text-gradient">Experience</span>
             </h2>
