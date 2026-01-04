@@ -7,10 +7,12 @@ import SkillsSection from "@/components/SkillsSection";
 import MindsetSection from "@/components/MindsetSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import CursorGlow from "@/components/CursorGlow";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <CursorGlow />
       <Navigation />
       <main>
         <HeroSection />
