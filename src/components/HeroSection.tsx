@@ -109,7 +109,7 @@ const HeroSection = () => {
             <Linkedin className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
           </a>
           <a
-            href="https://github.com/divyanshsingh-nitj"
+            href="https://github.com/Devel0per-Divyansh"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:bg-card-hover transition-all duration-300"
