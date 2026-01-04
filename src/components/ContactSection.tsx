@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Globe, ArrowUpRight, Send } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowUpRight, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -22,10 +22,10 @@ const ContactSection = () => {
       href: "https://linkedin.com/in/divyansh-singh-nitj",
     },
     {
-      icon: <Globe className="w-6 h-6" />,
-      label: "Portfolio",
-      value: "divyanshsingh.dev",
-      href: "#",
+      icon: <Github className="w-6 h-6" />,
+      label: "Github",
+      value: "github.com/Devel0per-Divyansh",
+      href: "https://github.com/Devel0per-Divyansh",
     },
   ];
 
