@@ -28,9 +28,8 @@ const MindsetSection = () => {
           className="max-w-3xl mx-auto"
         >
           {/* Section header */}
-          <div className="flex items-center gap-4 mb-12 justify-center">
-            <span className="text-2xl">🧠</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-center">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Builder <span className="font-serif italic text-gradient">Mindset</span>
             </h2>
           </div>

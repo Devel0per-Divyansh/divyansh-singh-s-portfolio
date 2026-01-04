@@ -34,7 +34,7 @@ const HeroSection = () => {
           className="mb-6"
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-sm text-muted-foreground">
-            <span className="text-lg">👋</span> Hi, I'm
+            Hi, I'm
           </span>
         </motion.div>
 

@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 interface ProjectCardProps {
-  emoji: string;
   title: string;
   subtitle: string;
   description: string;
@@ -15,7 +14,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
-  emoji,
   title,
   subtitle,
   description,
@@ -41,10 +39,7 @@ const ProjectCard = ({
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-2xl">{emoji}</span>
-              <h3 className="text-xl md:text-2xl font-bold text-foreground">{title}</h3>
-            </div>
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">{title}</h3>
             <p className="text-sm text-muted-foreground">{subtitle}</p>
           </div>
           {liveUrl && (

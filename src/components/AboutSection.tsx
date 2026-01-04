@@ -35,8 +35,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8 }}
         >
           {/* Section header */}
-          <div className="flex items-center gap-4 mb-8">
-            <span className="text-2xl">🚀</span>
+          <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-bold">
               About <span className="font-serif italic text-gradient">Me</span>
             </h2>
