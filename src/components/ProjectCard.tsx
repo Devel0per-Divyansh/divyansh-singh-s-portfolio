@@ -63,25 +63,6 @@ const ProjectCard = ({
           )}
         </div>
 
-        {/* Description */}
-        <p className="text-muted-foreground mb-6 leading-relaxed">{description}</p>
-
-        {/* Features */}
-        <div className="mb-6">
-          <h4 className="text-sm font-semibold text-foreground mb-3">Key Features</h4>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            {features.map((feature, i) => (
-              <li
-                key={i}
-                className="flex items-center gap-2 text-sm text-muted-foreground"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                {feature}
-              </li>
-            ))}
-          </ul>
-        </div>
-
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2">
           {techStack.map((tech, i) => (
