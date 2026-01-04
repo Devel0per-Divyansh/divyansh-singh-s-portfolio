@@ -33,7 +33,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-6"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-sm text-muted-foreground">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-primary/30 text-sm text-muted-foreground">
             Hi, I'm
           </span>
         </motion.div>
