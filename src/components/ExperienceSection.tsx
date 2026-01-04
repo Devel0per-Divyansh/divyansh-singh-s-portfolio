@@ -57,7 +57,7 @@ const ExperienceSection = () => {
               initial={{ opacity: 0, x: -40 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="group relative p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300"
+              className="group relative p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-4">
                 {/* Icon */}

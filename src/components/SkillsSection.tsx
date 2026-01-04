@@ -88,7 +88,7 @@ const SkillsSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-5 rounded-xl bg-card border border-border hover:border-primary/30 transition-all duration-300"
+              className="group p-5 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg bg-primary/10 text-primary">
@@ -130,7 +130,7 @@ const SkillsSection = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
-                className="group p-4 rounded-xl bg-card border border-border hover:border-primary/30 hover:bg-card-hover transition-all duration-300 text-center"
+                className="group p-4 rounded-xl bg-card border border-border hover:border-primary/50 hover:bg-card-hover transition-all duration-300 text-center"
               >
                 <div className="inline-flex p-3 rounded-xl bg-primary/10 text-primary mb-3 group-hover:scale-110 transition-transform">
                   {item.icon}
