@@ -1,12 +1,19 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { Mail, Linkedin, Globe, ArrowUpRight } from "lucide-react";
+import { useRef, useState } from "react";
+import { Mail, Linkedin, Globe, ArrowUpRight, Copy, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = async () => {
+    await navigator.clipboard.writeText("divyanshsinghnitj24@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const contacts = [
     {
@@ -49,6 +56,44 @@ const ContactSection = () => {
             </p>
           </div>
 
+          {/* CTA Card with glowing border */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-12"
+          >
+            <div className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-primary/60 via-primary/20 to-accent/60 hover:from-primary hover:via-primary/40 hover:to-accent transition-all duration-500">
+              {/* Outer glow */}
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 via-transparent to-accent/30 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              {/* Inner card */}
+              <div className="relative p-8 md:p-12 rounded-2xl bg-card">
+                <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-6">
+                  Do you want to start a <span className="font-serif italic text-gradient">project</span> together?
+                </h3>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={handleCopyEmail}
+                  className="border-border/50 bg-secondary/50 hover:bg-secondary hover:border-primary/50 transition-all duration-300"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="w-4 h-4 mr-2 text-green-500" />
+                      Copied!
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-4 h-4 mr-2" />
+                      Copy my email address
+                    </>
+                  )}
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Contact cards */}
           <div className="grid md:grid-cols-3 gap-4 mb-12">
             {contacts.map((contact, index) => (
@@ -59,7 +104,7 @@ const ContactSection = () => {
                 rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
               >
                 <div className="flex items-center justify-center gap-2 mb-4">
@@ -78,7 +123,7 @@ const ContactSection = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
           >
             <Button
               size="lg"
