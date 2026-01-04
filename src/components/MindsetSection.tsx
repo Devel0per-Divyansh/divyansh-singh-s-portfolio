@@ -51,11 +51,9 @@ const MindsetSection = () => {
             ))}
           </div>
 
-          {/* Divider */}
-          <div className="flex items-center gap-4 mb-12">
-            <div className="flex-1 h-px bg-border" />
+          {/* Divider - aligned with > symbols */}
+          <div className="flex items-center justify-center gap-4 mb-12">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <div className="flex-1 h-px bg-border" />
           </div>
 
           {/* Statements */}
