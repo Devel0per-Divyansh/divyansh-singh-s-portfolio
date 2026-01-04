@@ -42,11 +42,11 @@ const MindsetSection = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="flex items-center justify-center gap-4 text-lg md:text-xl"
+                className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 text-lg md:text-xl"
               >
-                <span className="font-semibold text-foreground">{principle.left}</span>
-                <span className="text-primary font-bold text-2xl">{principle.symbol}</span>
-                <span className="text-muted-foreground">{principle.right}</span>
+                <span className="font-semibold text-foreground text-right">{principle.left}</span>
+                <span className="text-primary font-bold text-2xl text-center">{principle.symbol}</span>
+                <span className="text-muted-foreground text-left">{principle.right}</span>
               </motion.div>
             ))}
           </div>
