@@ -52,11 +52,14 @@ const SkillsSection = () => {
   ];
 
   const whatIDo = [
-    { icon: <Video className="w-5 h-5" />, title: "Video Editing", desc: "Reels, Shorts, YouTube" },
-    { icon: <Palette className="w-5 h-5" />, title: "UI / Graphic Design", desc: "Thumbnails, layouts, visual systems" },
-    { icon: <Code className="w-5 h-5" />, title: "Web Development", desc: "Clean frontends (HTML, CSS, JS)" },
-    { icon: <Edit3 className="w-5 h-5" />, title: "Creative Writing", desc: "Scripts, hooks, narrative content" },
+    // Row 1
+    { icon: <Globe className="w-5 h-5" />, title: "Web Development", desc: "Clean frontends (HTML, CSS, JS)" },
+    { icon: <Code className="w-5 h-5" />, title: "Programming", desc: "DSA (C++), C, Python" },
     { icon: <Bot className="w-5 h-5" />, title: "AI-assisted workflows", desc: "Faster execution" },
+    // Row 2
+    { icon: <Palette className="w-5 h-5" />, title: "UI / Graphic Design", desc: "Thumbnails, layouts, visual systems" },
+    { icon: <Video className="w-5 h-5" />, title: "Video Editing", desc: "Reels, Shorts, YouTube" },
+    { icon: <Edit3 className="w-5 h-5" />, title: "Creative Writing", desc: "Scripts, hooks, narrative content" },
   ];
 
   return (
@@ -120,7 +123,7 @@ const SkillsSection = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {whatIDo.map((item, index) => (
               <motion.div
                 key={index}
