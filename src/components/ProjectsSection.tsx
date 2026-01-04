@@ -77,14 +77,14 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 flex justify-center"
         >
-          <div className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-primary/60 via-primary/20 to-accent/60 hover:from-primary hover:via-primary/40 hover:to-accent transition-all duration-500">
+          <div className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-primary/60 via-primary/20 to-accent/60 hover:from-primary hover:via-primary/40 hover:to-accent transition-all duration-500 w-full max-w-xl">
             {/* Outer glow */}
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 via-transparent to-accent/30 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
             
             {/* Inner card */}
-            <div className="relative p-8 md:p-12 rounded-2xl bg-card">
+            <div className="relative p-8 md:p-10 rounded-2xl bg-card text-center">
               <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-6">
                 Do you want to start a <span className="font-serif italic text-gradient">project</span> together?
               </h3>
