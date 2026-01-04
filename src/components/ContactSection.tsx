@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Globe, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, Globe, ArrowUpRight, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -40,13 +40,23 @@ const ContactSection = () => {
         >
           {/* Section header */}
           <div className="mb-12">
-            <span className="text-4xl mb-4 block">📫</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Let's <span className="font-serif italic text-gradient">Connect</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Ready to take <span className="font-serif italic text-gradient">your</span> digital<br />
+              presence to the next level?
             </h2>
-            <p className="text-muted-foreground max-w-md mx-auto">
-              Have a project in mind or just want to chat? I'm always open to discussing new opportunities.
+            <p className="text-muted-foreground max-w-lg mx-auto mb-8">
+              Reach out to me today and let's discuss how I can help you achieve your goals.
             </p>
+            <Button
+              size="lg"
+              className="bg-foreground text-background hover:bg-foreground/90 px-8 py-6 text-base font-medium rounded-full"
+              asChild
+            >
+              <a href="mailto:divyanshsinghnitj24@gmail.com">
+                Let's get in touch
+                <Send className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
           </div>
 
           {/* Contact cards */}
@@ -74,23 +84,6 @@ const ContactSection = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-medium glow-effect"
-              asChild
-            >
-              <a href="mailto:divyanshsinghnitj24@gmail.com">
-                <Mail className="w-5 h-5 mr-2" />
-                Send Me an Email
-              </a>
-            </Button>
-          </motion.div>
         </motion.div>
       </div>
     </section>
