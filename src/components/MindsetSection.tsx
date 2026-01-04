@@ -64,7 +64,7 @@ const MindsetSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border text-center hover:border-primary/30 transition-colors"
+                className="p-6 rounded-xl bg-card border border-border text-center hover:border-primary/50 transition-colors"
               >
                 <p className="text-foreground font-medium">{statement}</p>
               </motion.div>
