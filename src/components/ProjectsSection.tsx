@@ -20,7 +20,7 @@ const projects = [
       "Fully responsive UI",
     ],
     techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "No frameworks"],
-    liveUrl: "#",
+    liveUrl: "https://reach-together.vercel.app/",
   },
   {
     title: "NIT Jalandhar Research Dashboard",
@@ -36,7 +36,7 @@ const projects = [
       "Responsive, accessible UI",
     ],
     techStack: ["HTML5", "CSS3", "Vanilla JavaScript", "SPA architecture"],
-    liveUrl: "#",
+    liveUrl: "https://nitj-research-dashboard.vercel.app/",
   },
   {
     title: "Relative Grade Calculator",
@@ -52,7 +52,7 @@ const projects = [
       "Excel export + Dark mode",
     ],
     techStack: ["HTML", "CSS", "Vanilla JavaScript", "SheetJS", "SVG"],
-    liveUrl: "#",
+    liveUrl: "https://relative-grade.vercel.app/",
   },
 ];
 
