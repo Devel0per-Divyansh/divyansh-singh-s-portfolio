@@ -7,7 +7,6 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    emoji: "🚆",
     title: "Reach Together",
     subtitle: "Never Travel Alone",
     description:
@@ -26,7 +25,6 @@ const projects = [
     liveUrl: "#",
   },
   {
-    emoji: "📊",
     title: "NIT Jalandhar Research Dashboard",
     subtitle: "A data-driven institutional dashboard",
     description:
@@ -43,7 +41,6 @@ const projects = [
     liveUrl: "#",
   },
   {
-    emoji: "🧮",
     title: "Relative Grade Calculator",
     subtitle: "Late-night mini practice turned into a real academic tool",
     description:
@@ -120,8 +117,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <div className="flex items-center gap-4 mb-4">
-            <span className="text-2xl">🔥</span>
+          <div className="mb-4">
             <h2 className="text-3xl md:text-4xl font-bold">
               Featured <span className="font-serif italic text-gradient">Projects</span>
             </h2>
