@@ -72,11 +72,10 @@ const ContactSection = () => {
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover-lift"
               >
-                <div className="flex items-center justify-center gap-2 mb-4">
+                <div className="flex justify-center mb-4">
                   <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     {contact.icon}
                   </div>
-                  <ArrowUpRight className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-1">{contact.label}</h3>
                 <p className="text-sm text-muted-foreground break-all">{contact.value}</p>
