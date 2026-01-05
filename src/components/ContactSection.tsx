@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Github, ArrowUpRight, Send } from "lucide-react";
+import { Mail, Linkedin, Github, Instagram, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -26,6 +26,12 @@ const ContactSection = () => {
       label: "Github",
       value: "github.com/Devel0per-Divyansh",
       href: "https://github.com/Devel0per-Divyansh",
+    },
+    {
+      icon: <Instagram className="w-6 h-6" />,
+      label: "Instagram",
+      value: "divyanshsinghrajpoot.in",
+      href: "https://www.instagram.com/divyanshsinghrajpoot.in?igsh=eGx2eXVhZGo3aWM=",
     },
   ];
 
@@ -60,7 +66,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
             {contacts.map((contact, index) => (
               <motion.a
                 key={index}
