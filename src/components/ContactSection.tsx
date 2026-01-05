@@ -31,7 +31,7 @@ const ContactSection = () => {
       icon: <Instagram className="w-6 h-6" />,
       label: "Instagram",
       value: "instagram.com/divyanshsinghrajpoot.in",
-      href: "https://www.instagram.com/divyanshsinghrajpoot.in?igsh=eGx2eXVhZGo3aWM=",
+      href: "https://www.instagram.com/divyanshsinghrajpoot.in",
     },
   ];
 
