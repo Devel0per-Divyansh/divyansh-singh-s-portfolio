@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# 🚀 Divyansh Singh — Portfolio
 
-## Project info
+Welcome to my personal portfolio repository.  
+This project showcases my work, skills, and experiments across development, design, and creative technology.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Real projects. Practical builds. No filler.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 👋 About Me
 
-**Use Lovable**
+I’m **Divyansh Singh**, a developer and creator focused on building clean, functional, and user-focused products.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+I work at the intersection of:
+- Web development
+- UI / UX & product thinking
+- Visual and content design
+- Technology-driven problem solving
 
-Changes made via Lovable will be committed automatically to this repo.
+This portfolio evolves as I learn, build, and refine my craft.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧠 What You’ll Find Here
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Projects**  
+  Real-world applications, dashboards, tools, and experiments.
 
-Follow these steps:
+- **UI / UX Work**  
+  Clean interfaces, responsive layouts, and usability-first designs.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Creative & Visual Work**  
+  Thumbnails, visuals, and content systems designed for clarity and impact.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Learning & Practice Builds**  
+  Technical explorations, concept demos, and hands-on experiments.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🛠 Tech Stack
 
-**Edit a file directly in GitHub**
+This portfolio is built using:
+- HTML
+- CSS3
+- JS
+- Python
+- C/C++
+- DaVinci Resolve
+- Photoshop
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Focused stack. Clean execution.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Deployment
 
-## What technologies are used for this project?
+This project is deployed and publicly accessible.  
+The live version reflects the latest stable work from this repository.
 
-This project is built with:
+Updates are pushed regularly as new projects are added, designs are improved, or functionality is refined.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📬 Contact
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+For collaboration, opportunities, or discussions:
 
-## Can I connect a custom domain to my Lovable project?
+- **Email**: divyanshsinghnitj24@gmail.com  
+- **GitHub**: https://github.com/Devel0per-Divyansh
+- **LinkedIn**: https://linkedin.com/in/divyansh-singh-nitj
+- **Portfolio**: Selected projects and case studies  
 
-Yes, you can!
+(Links are intentionally kept simple and can be added as needed.)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📝 Note
+
+This repository is intentionally minimal.
+
+No over-engineering.  
+No unnecessary abstractions.
+
+The focus is on execution, clarity, and real work.
+
