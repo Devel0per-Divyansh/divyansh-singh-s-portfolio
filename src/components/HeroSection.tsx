@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Linkedin, Github } from "lucide-react";
+import { ArrowDown, Mail, Linkedin, Github, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -116,6 +116,15 @@ const HeroSection = () => {
             aria-label="GitHub"
           >
             <Github className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+          </a>
+          <a
+            href="https://www.instagram.com/divyanshsinghrajpoot.in?igsh=eGx2eXVhZGo3aWM="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-card border border-border hover:border-primary/50 hover:bg-card-hover transition-all duration-300"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
           </a>
         </motion.div>
 
